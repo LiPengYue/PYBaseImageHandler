@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		134572FE05BFA5AB535E411D /* Pods_PYBaseImageHandler_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PYBaseImageHandler_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AD05DAE38BC12D7BC80C9DE /* PYBaseImageHandler.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PYBaseImageHandler.podspec; path = ../PYBaseImageHandler.podspec; sourceTree = "<group>"; };
+		3AD05DAE38BC12D7BC80C9DE /* PYBaseImageHandler.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PYBaseImageHandler.podspec; path = ../PYBaseImageHandler.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3BA310DE5A9E75048D0D3D3E /* Pods_PYBaseImageHandler_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PYBaseImageHandler_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* PYBaseImageHandler_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PYBaseImageHandler_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,11 +61,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		617BE7A8F70F3C565CB70968 /* Pods-PYBaseImageHandler_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYBaseImageHandler_Example.release.xcconfig"; path = "Target Support Files/Pods-PYBaseImageHandler_Example/Pods-PYBaseImageHandler_Example.release.xcconfig"; sourceTree = "<group>"; };
 		62A055FB0B70450FC736293B /* Pods-PYBaseImageHandler_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYBaseImageHandler_Tests.release.xcconfig"; path = "Target Support Files/Pods-PYBaseImageHandler_Tests/Pods-PYBaseImageHandler_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		642D65C27385AAFCEAF62896 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		642D65C27385AAFCEAF62896 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BA12A89F8A0A8743FB37B68 /* Pods-PYBaseImageHandler_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYBaseImageHandler_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PYBaseImageHandler_Tests/Pods-PYBaseImageHandler_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F9E78C74A3BC6B6DE0CF9CCA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F9E78C74A3BC6B6DE0CF9CCA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FDD7F3D4AF3597D05A244998 /* Pods-PYBaseImageHandler_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYBaseImageHandler_Example.debug.xcconfig"; path = "Target Support Files/Pods-PYBaseImageHandler_Example/Pods-PYBaseImageHandler_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				8BA12A89F8A0A8743FB37B68 /* Pods-PYBaseImageHandler_Tests.debug.xcconfig */,
 				62A055FB0B70450FC736293B /* Pods-PYBaseImageHandler_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = LiPengYue;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 67VM37Q2CL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -513,6 +516,7 @@
 			baseConfigurationReference = FDD7F3D4AF3597D05A244998 /* Pods-PYBaseImageHandler_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67VM37Q2CL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PYBaseImageHandler/PYBaseImageHandler-Prefix.pch";
 				INFOPLIST_FILE = "PYBaseImageHandler/PYBaseImageHandler-Info.plist";
@@ -529,6 +533,7 @@
 			baseConfigurationReference = 617BE7A8F70F3C565CB70968 /* Pods-PYBaseImageHandler_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67VM37Q2CL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PYBaseImageHandler/PYBaseImageHandler-Prefix.pch";
 				INFOPLIST_FILE = "PYBaseImageHandler/PYBaseImageHandler-Info.plist";
